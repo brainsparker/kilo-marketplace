@@ -141,11 +141,11 @@
             },
             {
               "ref": "mcp:prefect-mcp-server",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "experimental",
               "source": "https://github.com/PrefectHQ/prefect-mcp-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is experimental and may change or lack production support."
               ],
@@ -243,11 +243,11 @@
             },
             {
               "ref": "mcp:spark-history",
-              "default": true,
+              "default": false,
               "trust": "provider",
               "maturity": "stable",
               "source": "https://github.com/kubeflow/mcp-apache-spark-history-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [],
               "curated": true
             }
@@ -288,11 +288,11 @@
             },
             {
               "ref": "mcp:nifi-mcp-server",
-              "default": true,
+              "default": false,
               "trust": "provider",
               "maturity": "stable",
               "source": "https://github.com/cloudera/NiFi-MCP-Server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [],
               "curated": true
             }
@@ -519,11 +519,11 @@
             },
             {
               "ref": "mcp:spark-history",
-              "default": true,
+              "default": false,
               "trust": "provider",
               "maturity": "stable",
               "source": "https://github.com/kubeflow/mcp-apache-spark-history-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [],
               "curated": true
             }
@@ -555,11 +555,11 @@
             },
             {
               "ref": "mcp:confluent",
-              "default": true,
+              "default": false,
               "trust": "provider",
               "maturity": "stable",
               "source": "https://github.com/confluentinc/mcp-confluent",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [],
               "curated": true
             }
@@ -595,11 +595,11 @@
             },
             {
               "ref": "mcp:confluent",
-              "default": true,
+              "default": false,
               "trust": "provider",
               "maturity": "stable",
               "source": "https://github.com/confluentinc/mcp-confluent",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [],
               "curated": true
             }
@@ -667,11 +667,11 @@
             },
             {
               "ref": "mcp:databricks-sql",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -679,11 +679,11 @@
             },
             {
               "ref": "mcp:unity-catalog-functions",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -1038,11 +1038,11 @@
             },
             {
               "ref": "mcp:databricks-sql",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -1050,11 +1050,11 @@
             },
             {
               "ref": "mcp:unity-catalog-functions",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -1261,11 +1261,11 @@
             },
             {
               "ref": "mcp:dbhub",
-              "default": true,
+              "default": false,
               "trust": "community",
               "maturity": "stable",
               "source": "https://github.com/bytebase/dbhub",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "Audit this community resource before installation."
               ],
@@ -1383,21 +1383,21 @@
             },
             {
               "ref": "mcp:neon",
-              "default": true,
+              "default": false,
               "trust": "provider",
               "maturity": "stable",
               "source": "https://github.com/neondatabase/mcp-server-neon",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [],
               "curated": true
             },
             {
               "ref": "mcp:postgres-mcp-pro",
-              "default": true,
+              "default": false,
               "trust": "community",
               "maturity": "stable",
               "source": "https://github.com/crystaldba/postgres-mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "Audit this community resource before installation."
               ],
@@ -1643,11 +1643,11 @@
             },
             {
               "ref": "mcp:power-bi-modeling",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://github.com/microsoft/powerbi-modeling-mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -1655,11 +1655,11 @@
             },
             {
               "ref": "mcp:power-bi-remote",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://learn.microsoft.com/en-us/power-bi/developer/mcp/remote-mcp-server-get-started",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -1795,11 +1795,11 @@
             },
             {
               "ref": "mcp:context7",
-              "default": true,
+              "default": false,
               "trust": "community",
               "maturity": "stable",
               "source": "https://github.com/upstash/context7",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "Audit this community resource before installation."
               ],
@@ -1807,11 +1807,11 @@
             },
             {
               "ref": "mcp:openapi-mcp",
-              "default": true,
+              "default": false,
               "trust": "community",
               "maturity": "stable",
               "source": "https://github.com/ivo-toby/mcp-openapi-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "Audit this community resource before installation."
               ],
@@ -1881,11 +1881,11 @@
             },
             {
               "ref": "mcp:aws-api-mcp",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "experimental",
               "source": "https://github.com/awslabs/mcp/tree/main/src/aws-api-mcp-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is experimental and may change or lack production support."
               ],
@@ -1985,11 +1985,11 @@
             },
             {
               "ref": "mcp:sagemaker-spark-troubleshooting-mcp",
-              "default": true,
+              "default": false,
               "trust": "community",
               "maturity": "stable",
               "source": "https://awslabs.github.io/mcp/servers/sagemaker-unified-studio-spark-troubleshooting-mcp-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "Audit this community resource before installation."
               ],
@@ -2117,11 +2117,11 @@
             },
             {
               "ref": "mcp:databricks-sql",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -2159,11 +2159,11 @@
             },
             {
               "ref": "mcp:context7",
-              "default": true,
+              "default": false,
               "trust": "community",
               "maturity": "stable",
               "source": "https://github.com/upstash/context7",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "Audit this community resource before installation."
               ],
@@ -2209,11 +2209,11 @@
             },
             {
               "ref": "mcp:context7",
-              "default": true,
+              "default": false,
               "trust": "community",
               "maturity": "stable",
               "source": "https://github.com/upstash/context7",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "Audit this community resource before installation."
               ],
@@ -2227,11 +2227,11 @@
           "resources": [
             {
               "ref": "mcp:jupyter-mcp",
-              "default": true,
+              "default": false,
               "trust": "community",
               "maturity": "stable",
               "source": "https://github.com/datalayer/jupyter-mcp-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "Audit this community resource before installation."
               ],
@@ -2265,11 +2265,11 @@
             },
             {
               "ref": "mcp:mlflow-mcp",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "experimental",
               "source": "https://github.com/mlflow/mlflow/tree/master/mlflow/mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is experimental and may change or lack production support."
               ],
@@ -2570,11 +2570,11 @@
             },
             {
               "ref": "mcp:aws-api-mcp",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "experimental",
               "source": "https://github.com/awslabs/mcp/tree/main/src/aws-api-mcp-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is experimental and may change or lack production support."
               ],
@@ -2612,11 +2612,11 @@
             },
             {
               "ref": "mcp:knowledge-catalog-mcp",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://docs.cloud.google.com/dataplex/docs/use-remote-mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -2624,11 +2624,11 @@
             },
             {
               "ref": "mcp:data-lineage-mcp",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://docs.cloud.google.com/dataplex/docs/use-lineage-mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -2654,11 +2654,11 @@
             },
             {
               "ref": "mcp:membrane-cloud-mcp",
-              "default": true,
+              "default": false,
               "trust": "community",
               "maturity": "stable",
               "source": "https://docs.getmembrane.com/docs/ways-to-use-membrane/mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "Audit this community resource before installation."
               ],
@@ -2696,11 +2696,11 @@
             },
             {
               "ref": "mcp:unity-catalog-functions",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -2708,11 +2708,11 @@
             },
             {
               "ref": "mcp:databricks-sql",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -2738,11 +2738,11 @@
             },
             {
               "ref": "mcp:datahub-mcp",
-              "default": true,
+              "default": false,
               "trust": "provider",
               "maturity": "stable",
               "source": "https://docs.datahub.com/docs/features/feature-guides/mcp",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [],
               "curated": true
             }
@@ -2807,11 +2807,11 @@
             },
             {
               "ref": "mcp:grafana-cloud-mcp",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://grafana.com/docs/grafana-cloud/machine-learning/assistant/configure/cloud-mcp/",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -2849,11 +2849,11 @@
             },
             {
               "ref": "mcp:splunk-mcp-server",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "beta",
               "source": "https://splunkbase.splunk.com/app/7931",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is beta and may change or lack production support."
               ],
@@ -2879,11 +2879,11 @@
             },
             {
               "ref": "mcp:new-relic-ai-mcp",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "preview",
               "source": "https://github.com/newrelic/mcp-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is preview and may change or lack production support."
               ],
@@ -3001,11 +3001,11 @@
             },
             {
               "ref": "mcp:aws-api-mcp",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "experimental",
               "source": "https://github.com/awslabs/mcp/tree/main/src/aws-api-mcp-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is experimental and may change or lack production support."
               ],
@@ -3061,11 +3061,11 @@
             },
             {
               "ref": "mcp:vault-mcp",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "beta",
               "source": "https://github.com/hashicorp/vault-mcp-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is beta and may change or lack production support."
               ],
@@ -3073,11 +3073,11 @@
             },
             {
               "ref": "mcp:vault-radar-mcp",
-              "default": true,
+              "default": false,
               "trust": "official",
               "maturity": "beta",
               "source": "https://hub.docker.com/r/hashicorp/vault-radar-mcp-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "This resource is beta and may change or lack production support."
               ],
@@ -3120,11 +3120,11 @@
             },
             {
               "ref": "mcp:context7",
-              "default": true,
+              "default": false,
               "trust": "community",
               "maturity": "stable",
               "source": "https://github.com/upstash/context7",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "Audit this community resource before installation."
               ],
@@ -3186,11 +3186,11 @@
             },
             {
               "ref": "mcp:openmetadata-us-all",
-              "default": true,
+              "default": false,
               "trust": "community",
               "maturity": "stable",
               "source": "https://github.com/us-all/openmetadata-mcp-server",
-              "rationale": "MCP server enabled by default; complete authentication after installation.",
+              "rationale": "Optional MCP server; enable explicitly and complete authentication after installation.",
               "warnings": [
                 "Audit this community resource before installation."
               ],

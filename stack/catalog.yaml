@@ -60,7 +60,7 @@ verticals:
           - ref: "skill:prefect"
             default: false
           - ref: "mcp:prefect-mcp-server"
-            default: true
+            default: false
 
       - id: dbt
         name: dbt
@@ -88,7 +88,7 @@ verticals:
           - ref: "skill:udf-benchmark"
             default: false
           - ref: "mcp:spark-history"
-            default: true
+            default: false
 
       - id: stitch
         name: Stitch
@@ -102,7 +102,7 @@ verticals:
           - ref: "skill:nifi-flow-layout"
             default: false
           - ref: "mcp:nifi-mcp-server"
-            default: true
+            default: false
 
       - id: fivetran
         name: Fivetran
@@ -167,7 +167,7 @@ verticals:
           - ref: "skill:databricks-pipelines"
             default: true
           - ref: "mcp:spark-history"
-            default: true
+            default: false
 
       - id: apache-kafka
         name: Apache Kafka
@@ -177,7 +177,7 @@ verticals:
           - ref: "skill:kafka-schema-registry"
             default: false
           - ref: "mcp:confluent"
-            default: true
+            default: false
 
       - id: apache-flink
         name: Apache Flink
@@ -187,7 +187,7 @@ verticals:
           - ref: "skill:flink-best-practices"
             default: false
           - ref: "mcp:confluent"
-            default: true
+            default: false
 
       - id: apache-beam
         name: Apache Beam
@@ -208,9 +208,9 @@ verticals:
           - ref: "skill:databricks-jobs"
             default: true
           - ref: "mcp:databricks-sql"
-            default: true
+            default: false
           - ref: "mcp:unity-catalog-functions"
-            default: true
+            default: false
 
       - id: snowflake
         name: Snowflake
@@ -312,9 +312,9 @@ verticals:
           - ref: "skill:databricks-core"
             default: true
           - ref: "mcp:databricks-sql"
-            default: true
+            default: false
           - ref: "mcp:unity-catalog-functions"
-            default: true
+            default: false
 
       - id: apache-iceberg
         name: Apache Iceberg
@@ -379,7 +379,7 @@ verticals:
           - ref: "mcp:microsoft-data-api-builder"
             default: true
           - ref: "mcp:dbhub"
-            default: true
+            default: false
 
       - id: mysql
         name: MySQL
@@ -413,9 +413,9 @@ verticals:
           - ref: "skill:neon-postgres"
             default: false
           - ref: "mcp:neon"
-            default: true
+            default: false
           - ref: "mcp:postgres-mcp-pro"
-            default: true
+            default: false
 
       - id: cassandra
         name: Cassandra
@@ -482,9 +482,9 @@ verticals:
           - ref: "skill:powerbi-documentation"
             default: false
           - ref: "mcp:power-bi-modeling"
-            default: true
+            default: false
           - ref: "mcp:power-bi-remote"
-            default: true
+            default: false
 
       - id: qlik-sense
         name: Qlik Sense
@@ -521,9 +521,9 @@ verticals:
           - ref: "skill:fastapi-martinholovsky"
             default: false
           - ref: "mcp:context7"
-            default: true
+            default: false
           - ref: "mcp:openapi-mcp"
-            default: true
+            default: false
 
       - id: azure-data-share
         name: Azure Data Share
@@ -543,7 +543,7 @@ verticals:
           - ref: "mcp:aws"
             default: true
           - ref: "mcp:aws-api-mcp"
-            default: true
+            default: false
 
       - id: delta-sharing
         name: Delta Sharing
@@ -572,7 +572,7 @@ verticals:
           - ref: "skill:dataset-evaluation"
             default: true
           - ref: "mcp:sagemaker-spark-troubleshooting-mcp"
-            default: true
+            default: false
           - ref: "mcp:aws-data-processing"
             default: true
 
@@ -606,7 +606,7 @@ verticals:
           - ref: "skill:databricks-pipelines"
             default: true
           - ref: "mcp:databricks-sql"
-            default: true
+            default: false
 
       - id: tensorflow
         name: TensorFlow
@@ -616,7 +616,7 @@ verticals:
           - ref: "skill:tensorflow-model-deployment"
             default: false
           - ref: "mcp:context7"
-            default: true
+            default: false
           - ref: "mcp:github"
             default: true
 
@@ -628,13 +628,13 @@ verticals:
           - ref: "skill:aoti-debug"
             default: true
           - ref: "mcp:context7"
-            default: true
+            default: false
 
       - id: h2o-ai
         name: H2O.ai
         resources:
           - ref: "mcp:jupyter-mcp"
-            default: true
+            default: false
 
       - id: mlflow
         name: MLflow
@@ -644,7 +644,7 @@ verticals:
           - ref: "skill:searching-mlflow-docs"
             default: true
           - ref: "mcp:mlflow-mcp"
-            default: true
+            default: false
 
       - id: scikit-learn
         name: Scikit-learn
@@ -734,7 +734,7 @@ verticals:
           - ref: "mcp:aws-data-processing"
             default: true
           - ref: "mcp:aws-api-mcp"
-            default: true
+            default: false
 
       - id: gcp-bigquery-dg
         name: GCP BigQuery DG
@@ -744,9 +744,9 @@ verticals:
           - ref: "skill:dataplex-and-bigquery-governance"
             default: false
           - ref: "mcp:knowledge-catalog-mcp"
-            default: true
+            default: false
           - ref: "mcp:data-lineage-mcp"
-            default: true
+            default: false
 
       - id: privacera
         name: Privacera
@@ -754,7 +754,7 @@ verticals:
           - ref: "skill:integrate-anything"
             default: false
           - ref: "mcp:membrane-cloud-mcp"
-            default: true
+            default: false
 
       # ── Metastores ────────────────────────────────────────────────────────────
       - id: unity-catalog
@@ -765,9 +765,9 @@ verticals:
           - ref: "skill:databricks-dbsql"
             default: false
           - ref: "mcp:unity-catalog-functions"
-            default: true
+            default: false
           - ref: "mcp:databricks-sql"
-            default: true
+            default: false
 
       - id: hive-metastore
         name: Hive Metastore
@@ -775,7 +775,7 @@ verticals:
           - ref: "skill:data-catalog-and-discovery"
             default: false
           - ref: "mcp:datahub-mcp"
-            default: true
+            default: false
 
       - id: dremio
         name: Dremio
@@ -798,7 +798,7 @@ verticals:
           - ref: "mcp:mcp-grafana"
             default: true
           - ref: "mcp:grafana-cloud-mcp"
-            default: true
+            default: false
 
       - id: splunk
         name: Splunk
@@ -808,7 +808,7 @@ verticals:
           - ref: "skill:splunk-ingest-processor-setup"
             default: false
           - ref: "mcp:splunk-mcp-server"
-            default: true
+            default: false
 
       - id: new-relic
         name: New Relic
@@ -816,7 +816,7 @@ verticals:
           - ref: "skill:newrelic-cli-skills"
             default: false
           - ref: "mcp:new-relic-ai-mcp"
-            default: true
+            default: false
 
       - id: datadog
         name: Datadog
@@ -849,7 +849,7 @@ verticals:
           - ref: "mcp:aws"
             default: true
           - ref: "mcp:aws-api-mcp"
-            default: true
+            default: false
 
       - id: gcp-secret-manager
         name: GCP Secret Manager
@@ -865,9 +865,9 @@ verticals:
           - ref: "skill:secrets-vault-manager"
             default: false
           - ref: "mcp:vault-mcp"
-            default: true
+            default: false
           - ref: "mcp:vault-radar-mcp"
-            default: true
+            default: false
 
       - id: cyberark-conjur
         name: CyberArk Conjur
@@ -882,7 +882,7 @@ verticals:
           - ref: "skill:senior-data-engineer"
             default: false
           - ref: "mcp:context7"
-            default: true
+            default: false
           - ref: "mcp:github"
             default: true
 
@@ -900,7 +900,7 @@ verticals:
           - ref: "mcp:openmetadata-mcp"
             default: true
           - ref: "mcp:openmetadata-us-all"
-            default: true
+            default: false
 
       - id: soda-core-cl
         name: Soda Core/CL

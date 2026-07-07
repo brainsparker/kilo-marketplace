@@ -144,14 +144,14 @@ function validateAssociation(raw: unknown, path: string, registered: Map<string,
   const resource = registered.get(ref)
   if (!resource) throw new Error(`${path}: ref "${ref}" is not in the resources registry`)
 
-  // Trust-policy enforcement: only defaultable resources may carry default:true.
+  // Trust-policy enforcement: only stable, official resources may carry default:true.
+  // This applies uniformly to both Skills and MCPs — an unstable (preview/beta/
+  // experimental/...) or non-official (provider/community) resource must never be
+  // enabled by default for end users, regardless of kind.
   if (a.default === true) {
-    const ok =
-      resource.kind === "mcp" ||
-      (resource.kind === "skill" && resource.trust === "official" && resource.maturity === "stable")
-    if (!ok) {
+    if (resource.trust !== "official" || resource.maturity !== "stable") {
       throw new Error(
-        `${path}: ref "${ref}" has default:true but is not a stable official Skill or an MCP (kind=${resource.kind}, trust=${resource.trust}, maturity=${resource.maturity})`,
+        `${path}: ref "${ref}" has default:true but is not a stable official resource (kind=${resource.kind}, trust=${resource.trust}, maturity=${resource.maturity})`,
       )
     }
   }
@@ -167,7 +167,9 @@ function validateAssociation(raw: unknown, path: string, registered: Map<string,
       ? resource.kind === "mcp"
         ? "MCP server enabled by default; complete authentication after installation."
         : "Stable first-party Skill recommended by the Data Engineering catalog."
-      : "Optional Skill candidate requiring explicit review and selection."
+      : resource.kind === "mcp"
+        ? "Optional MCP server; enable explicitly and complete authentication after installation."
+        : "Optional Skill candidate requiring explicit review and selection."
 
   return {
     ref,
